@@ -52,19 +52,5 @@ Stack * makeStack() {
     return ret;
 }
 
+// use "*(TYPE *)(pop(stack))" to print out or get the value.
 
-int main(int argc, const char * argv[]) {
-    
-    Stack *s = makeStack();
-    
-    char op1 = '*';
-    
-    push(s, &op1);
-    char op2 = '+';
-    push(s, &op2);
-    
-    printf("%c\n", *(int *)(pop(s)));
-    printf("%c\n", *(int *)(pop(s)));
-    
-    return 0;
-}
