@@ -27,23 +27,16 @@ struct Node {
 };
 
 void insert(int value, Node **node) {
-    
     if ((*node) == NULL) {
-        
         (*node) = newNode(value);
         return;
     }
     
-    int nodevalue = (*node)->value;
-    
-    if (value > nodevalue) {
+    if (value > (*node)->value) {
         insert(value, &(*node)->right);
     }else {
-        
         insert(value, &(*node)->left);
-        
     }
-    
 }
 
 Node* search(int value, Node *current) {
