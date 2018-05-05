@@ -1,4 +1,5 @@
-# C-BinaryTree
-Binary Tree implemented in C
+# Common Data Structures in C.
 
-Methods included are: insert, search, depth, size, and print values in order. 
+My implementations of Common Data Structures in C.
+
+In Binary Tree, methods included are: insert, search, depth, size, and print values in order. 
